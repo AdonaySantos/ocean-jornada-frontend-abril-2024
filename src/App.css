@@ -3,12 +3,21 @@
   padding: 16px;
   margin: 16px;
   border-radius: 16px;
-  box-shadow: 3px 3px white;
   text-align: center;
+  transition: 0.15s all;
+}
+
+.card:hover {
+  box-shadow: 3px 3px white;
+  translate: -3px -3px;
 }
 
 .card > h2{
   font-size: 32px;
+}
+
+.card > p{
+
 }
 
 .card > img{
