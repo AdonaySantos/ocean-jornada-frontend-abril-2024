@@ -1,3 +1,5 @@
+import Tag from "../Tag/tag"
+
 export default function Card(props) {
     const item = props.item
     
@@ -6,9 +8,9 @@ export default function Card(props) {
             <h2>{item.name}</h2>
     
             <div className="tags">
-            <div>Status: Vivo</div>
-            <div>Espécie: Humana</div>
-            <div>Origem: Terra C-137</div>
+                {item.tags.map(function (tag) {
+                    return <Tag text={tag} />
+                })}
             </div>
     
             <img src={item.image} />
