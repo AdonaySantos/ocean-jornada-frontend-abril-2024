@@ -18,8 +18,6 @@ export default function Create() {
         
         // Transforma um objeto em uma string JSON
         const json = JSON.stringify(data)
-
-        console.log(data, json)
         
         // Declara a URL da API para realização do POST
         const apiUrl = 'https://ocean-jornada-backend-abril-2024.onrender.com/item'
@@ -33,12 +31,14 @@ export default function Create() {
             body: json
         })
 
-        // Redireciona para a página principal
+        // Redireciona, navega para a página principal
         return navigate('/')
     }
     return (
         <>
+            <div className="header">
             <Link to ="/">Home</Link>
+            </div>
             <div>
                 <form onSubmit={onSubmit}>
                     <label htmlFor="name">Nome:</label>
