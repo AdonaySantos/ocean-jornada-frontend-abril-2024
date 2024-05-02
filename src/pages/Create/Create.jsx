@@ -39,16 +39,18 @@ export default function Create() {
             <div className="header">
             <Link to ="/">Home</Link>
             </div>
-            <div>
+            <div className="form">
                 <form onSubmit={onSubmit}>
                     <label htmlFor="name">Nome:</label>
+                    <br />
                     <input type="text" id="name" name="name" placeholder="Digite o nome"></input>
                     <br />
-
+                    <br />
                     <label htmlFor="image">Image:</label>
+                    <br />
                     <input type="text" id="image" name="image" placeholder="Digite a URL da imagem"></input>
                     <br />
-
+                    <br />
                     <input type="submit" value="Criar" />
                 </form>
             </div>
